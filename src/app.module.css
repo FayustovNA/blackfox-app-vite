@@ -5,10 +5,23 @@
   text-align: center;
 }
 
+.test {
+  display: flex;
+  gap: 25px;
+}
+
 .calories {
-  color: #EB4B62;
+  color: #05CD99;
 }
 
 .steps {
   color: #3A82F7;
+}
+
+.kg {
+  color: #EB4B62;
+}
+
+.fats {
+  color: #F1A33B;
 }
