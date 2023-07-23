@@ -9,11 +9,15 @@ function App() {
   return (
     <>
       <div>
+        {/* Тестовый виджет */}
         <SmallWidget
           title={'Калорийность'}
-          targetValue={100}
+          currentValue={24500}
+          targetValue={3450}
           icon={Fleme}
           isWithTarget={true}
+          unit={'kcal'}
+          extraClass={styles.steps}
         />
 
       </div>

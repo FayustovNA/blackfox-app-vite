@@ -11,7 +11,6 @@ function Logo() {
                 <p className={styles.h2}>NUTRITION</p>
             </div>
         </div>
-
     );
 }
 

@@ -1,5 +1,4 @@
 import styles from './small-widget.module.css';
-import imgFlame from '../../images/flame.svg';
 
 interface WidgetProps {
     icon?: any;
@@ -21,21 +20,26 @@ export const SmallWidget: React.FC<WidgetProps> = ({
     isWithTarget,
 }) => {
     return (
-        <div className={`${styles.mainbox} ${extraClass}`}>
+        <div className={`${styles.mainbox}`}>
             <h3 className={styles.title}>
                 {title}
             </h3>
             <div className={styles.valuebox}>
 
-                <div className={`${styles.absolute} ${styles.head} ${styles[typeof unit === "number" ? "number" : "element"]}`}>
-                    {unit}
+                <div className={`${styles.currentValue} ${extraClass}`}>
+                    {currentValue}
+                    {!isWithTarget ?
+                        <p className={styles.unitCurrentValue}>
+                            {unit}
+                        </p> : null
+                    }
                 </div>
 
-                {isWithTarget ? <div className={`${styles.circle}  ${isWithTarget ? styles.target : ""}`}>
-                    <p className={`${styles.targetValue} ${isWithTarget ? styles.target : ""}`}>
-                        {targetValue}
+                {isWithTarget ?
+                    <p className={`${styles.targetValue}`}>
+                        / {targetValue} {unit}
                     </p>
-                </div> : ''}
+                    : null}
 
             </div>
             <img className={styles.icon} src={icon}></img>

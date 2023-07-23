@@ -38,5 +38,39 @@
 }
 
 .valuebox {
-    width: 160px;
+    width: 175px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: flex-end;
+    margin: 50px auto 15px 25px;
+}
+
+.currentValue {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.unitCurrentValue {
+    font-size: 18px;
+    padding: 0 0 1px 0;
+    margin: 0;
+    align-items: flex-end;
+    display: flex;
+}
+
+.targetValue {
+    color: #A7A7A7;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 0 0 2px 0;
+    margin: 0;
 }
