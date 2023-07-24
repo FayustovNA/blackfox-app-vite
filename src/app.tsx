@@ -2,19 +2,26 @@ import { useState } from 'react'
 import styles from './app.module.css'
 import Logo from './components/logo/logo'
 import { SmallWidget } from './components/small-widget/small-widget'
-import Fleme from './images/flame.svg'
-import Calories from './images/calories.svg'
-import Steps from './images/feets.svg'
-import Person from './images/person.svg'
 import { UserPanel } from './components/user/user'
 import Avatar from './images/avatar.svg'
+import { SendReportWidget } from './components/send-report-widget/send-report-widget'
+
 
 function App() {
 
   return (
     <>
-      {/* Тест карточки клиента и тренера */}
+      {/* Тест карточки отправки данных*/}
       <div className={styles.test}>
+        <SendReportWidget
+          title={'Внести вес'}
+          currentValue={77.9339}
+          targetValue={-10}
+          extraClass={'kg'}
+        />
+      </div>
+      {/* Тест карточки клиента и тренера */}
+      {/* <div className={styles.test}>
 
         <UserPanel
           avatar={Avatar}
@@ -37,41 +44,37 @@ function App() {
           targetWeigth={76.4}
           type={'client'}
         />
-      </div>
+      </div> */}
       {/* Тестовый ряд виджетов */}
       <div className={styles.test}>
         <SmallWidget
           title={'За текущий месяц'}
           currentValue={-3.5}
-          icon={Fleme}
           isWithTarget={false}
           unit={'kg'}
-          extraClass={styles.kg}
+          extraClass={'kg'}
         />
         <SmallWidget
           title={'Калорийность'}
           currentValue={1300}
           targetValue={1500}
-          icon={Calories}
           isWithTarget={true}
           unit={'kcal'}
-          extraClass={styles.calories}
+          extraClass={'kcal'}
         />
         <SmallWidget
           title={'Процент жира'}
           currentValue={37}
           targetValue={33.5}
-          icon={Person}
           isWithTarget={true}
           unit={'%'}
-          extraClass={styles.fats}
+          extraClass={'fats'}
         />
         <SmallWidget
           title={'Активность'}
           currentValue={24500}
-          icon={Steps}
           isWithTarget={false}
-          extraClass={styles.steps}
+          extraClass={'steps'}
         />
       </div>
     </>

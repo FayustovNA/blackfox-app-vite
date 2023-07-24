@@ -3,25 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background: #1C1C21;
 }
 
 .test {
   display: flex;
   gap: 25px;
-}
-
-.calories {
-  color: #05CD99;
-}
-
-.steps {
-  color: #3A82F7;
-}
-
-.kg {
-  color: #EB4B62;
-}
-
-.fats {
-  color: #F1A33B;
 }

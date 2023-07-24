@@ -74,3 +74,23 @@
     padding: 0 0 2px 0;
     margin: 0;
 }
+
+.kcal {
+    color: #05CD99;
+    fill: #05CD99;
+}
+
+.steps {
+    color: #3A82F7;
+    fill: #3A82F7;
+}
+
+.kg {
+    color: #EB4B62;
+    fill: #EB4B62;
+}
+
+.fats {
+    color: #F1A33B;
+    fill: #F1A33B;
+}
