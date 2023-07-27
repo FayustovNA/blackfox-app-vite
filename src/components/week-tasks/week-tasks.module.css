@@ -1,0 +1,134 @@
+.mainbox {
+    width: 350px;
+    height: 345px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2D2C32 23.44%, #41434A 100%);
+    position: relative;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.icon {
+    position: absolute;
+    top: 23px;
+    left: 295px;
+    padding: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.title {
+    color: #A7A7A7;
+    font-family: Montserrat;
+    display: flex;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    width: calc(100% - 2*25px);
+    padding: 0;
+    margin: 10px auto;
+    align-items: center;
+    height: 55px;
+    border-bottom: solid 1px #A7A7A7;
+}
+
+.todolist {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 2*25px);
+    margin: 0px auto 25px;
+    max-height: 240px;
+    overflow: scroll;
+}
+
+.inputContainer {
+    display: flex;
+    font-family: Montserrat;
+    justify-content: space-between;
+    margin: 10px auto;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+}
+
+.addButton {
+    font-size: 24px;
+    font-weight: 400;
+    border-radius: 10px;
+    background: #A7A7A7;
+    align-items: center;
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.addButton:hover:enabled {
+    opacity: 0.9;
+}
+
+.addButton:disabled {
+    background: #A7A7A7;
+    opacity: 0.2;
+    cursor: not-allowed;
+    color: #000;
+}
+
+.deleteButton {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    border: none;
+    border-radius: 10px;
+    background: #EB4B62;
+    width: 50px;
+    height: 30px;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.input {
+    color: #000;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #1E1E1E;
+    height: 30px;
+    width: 50%;
+    padding: 0px 15px 0px 15px;
+    border: none;
+}
+
+.input:focus {
+    background-color: #3e3e3f;
+    color: #FFFFFF;
+    outline: none;
+    border: none;
+}
+
+input:-webkit-autofill:focus {
+    border: none;
+    outline: none;
+    -webkit-text-fill-color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 0px 500px #1E1E1E inset;
+}
+
+input:-webkit-autofill {
+    border: none;
+    outline: none;
+    -webkit-text-fill-color: #FFFFFF;
+    color: #FFFFFF;
+    -webkit-box-shadow: 0px 0px 0px 500px #1E1E1E inset;
+}

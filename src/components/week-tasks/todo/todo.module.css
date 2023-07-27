@@ -1,0 +1,55 @@
+.todoContainer {
+    display: flex;
+    margin: 5px auto auto auto;
+    width: 100%;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    padding: 0;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.todo {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    min-height: 40px;
+    gap: 10px;
+    overflow-wrap: break-word;
+    text-align: start;
+    word-break: break-all;
+    padding: 0;
+}
+
+.todotask {
+    color: #A7A7A7;
+    font-family: Montserrat;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    align-items: center;
+    border-bottom: #A7A7A7 dashed 1px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    min-width: 15px;
+    min-height: 15px;
+    border-radius: 10px;
+    border: 1px solid #A7A7A7;
+    transition: 0.2s;
+}
+
+.checkbox:checked {
+    /* position: relative; */
+    background: #A59557;
+    border: 1px solid #1E1E1E;
+
+}
