@@ -39,7 +39,7 @@ body {
   padding: 0;
   display: flex;
   place-items: center;
-  width: 1440px;
+  width: 100%;
   min-width: 320px;
-  min-height: 100vh;
+  height: 100vh;
 }

@@ -1,0 +1,41 @@
+.mainbox {
+    width: 290px;
+    height: 100%;
+    background: #2D2C32;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    padding: 0;
+    margin: 35px 20px 25px 20px;
+}
+
+.menu {
+    border-top: 1px #A7A7A7 solid;
+    padding: 45px 0;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.logout {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    left: 25px;
+    bottom: 60px;
+}
+
+.logout:hover {
+    opacity: 0.7;
+}
