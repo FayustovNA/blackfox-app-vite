@@ -1,0 +1,11 @@
+.mainbox {
+    width: 720px;
+    height: 345px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2D2C32 23.44%, #41434A 100%);
+    position: relative;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}

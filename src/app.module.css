@@ -1,5 +1,5 @@
 #root {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   margin: 0 auto;
   padding: 2rem;
@@ -10,15 +10,15 @@
 .app {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
 
 .conttent {
-  width: 100%;
-  padding: 0;
-  margin-left: 30px;
-  margin-top: 40px;
+  width: 100vw;
+  padding: 40px 30px 30px 30px;
+  margin: 0;
+  overflow: scroll;
 }
 
 /* ::-webkit-scrollbar {

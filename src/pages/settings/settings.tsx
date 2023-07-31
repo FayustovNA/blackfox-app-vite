@@ -1,7 +1,5 @@
 import styles from './setting.module.css';
 
-
-
 interface SettingsProps {
     img?: any;
 }
