@@ -33,7 +33,7 @@ export const SendReportWidget: React.FC<SendReportWidgetProps> = ({
             </div>
             <div className={styles.bar}>
                 <p className={styles.targetValue}>{targetValue}<span>{extraClass}</span></p>
-                <Progress.Line percent={30} showInfo={false} strokeColor={extraClass === 'kg' ? '#F1A33B' : '#3A82F7' && extraClass === 'kcal' ? '#05CD99' : '#3A82F7'} strokeWidth={7} trailColor='#6A696C' />
+                <Progress.Line percent={77} showInfo={false} strokeColor={extraClass === 'kg' ? '#F1A33B' : '#3A82F7' && extraClass === 'kcal' ? '#05CD99' : '#3A82F7'} strokeWidth={7} trailColor='#6A696C' />
             </div>
         </div >
     );

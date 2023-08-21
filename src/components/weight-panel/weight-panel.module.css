@@ -9,3 +9,41 @@
     margin: 0;
     padding: 0;
 }
+
+.title {
+    color: #A7A7A7;
+    font-family: Montserrat;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    width: calc(100% - 2*25px);
+    padding: 0;
+    margin: 10px auto;
+    align-items: center;
+    height: 40px;
+}
+
+.total {
+    width: 50%;
+    height: 40px;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    color: #A59557;
+    padding: 0;
+    margin: 0px auto 10px 30px;
+}
+
+.unit {
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.chart {
+    width: calc(100% - 2*20px);
+    display: flex;
+    padding: 0;
+    margin: auto;
+    justify-content: center;
+}

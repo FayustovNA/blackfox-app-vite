@@ -1,0 +1,147 @@
+.signinnpage {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+    position: relative;
+}
+
+.title {
+    color: #CACACA;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.form {
+    max-width: 500px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    flex-direction: column;
+    background: #1C1C21;
+    border-radius: 20px;
+}
+
+.input {
+    width: 350px;
+    color: #A7A7A7;
+    height: 40px;
+    background: linear-gradient(180deg, #2F2E34 23.44%, #41434A 100%);
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.input::placeholder {
+    color: #8A8A8C;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.input:focus {
+    background-color: linear-gradient(180deg, #2F2E34 23.44%, #41434A 100%);
+    outline: none;
+    font-size: 14px;
+    border: 0.5px solid #CACACA;
+}
+
+input:-webkit-autofill:focus {
+    border: 0.5px solid #CACACA;
+    outline: none;
+    font-size: 14px;
+    -webkit-text-fill-color: #CACACA;
+    -webkit-box-shadow: 0 0 0px 1000px #2D2C32 inset;
+}
+
+input:-webkit-autofill {
+    border: 0.5px solid #2D2C32;
+    outline: none;
+    -webkit-text-fill-color: #CACACA;
+    -webkit-box-shadow: 0 0 0px 1000px #2D2C32 inset;
+}
+
+.btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: #1C1C21;
+    background: #A59557;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+.linksblock {
+    margin: 30px auto;
+    padding: 0;
+}
+
+.text {
+    color: #8A8A8C;
+    font-family: Montserrat;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    margin: 10px auto 0 auto;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 auto 0 10px;
+    color: #A59557;
+}
+
+.link:hover {
+    opacity: 0.8;
+}
+
+.logo {
+    position: absolute;
+    bottom: 10px;
+    justify-content: center;
+    padding: 0;
+}
+
+.name {
+    font-family: Blender Pro;
+    font-weight: 900;
+    color: #A59557;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: 3.9px;
+    padding: 0;
+    margin: 5px auto 0px 10px;
+}
+
+.img {
+    width: 25px;
+    height: 25px;
+}

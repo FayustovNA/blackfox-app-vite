@@ -1,5 +1,5 @@
 .mainbox {
-    width: 340px;
+    width: 365px;
     height: 240px;
     flex-shrink: 0;
     border-radius: 22px;
@@ -76,10 +76,12 @@
     border-radius: none;
     margin: 0;
     padding: 0;
+    object-fit: cover;
 }
 
 .link {
     border-radius: 100px;
+    text-decoration: none;
     background: rgba(45, 44, 50, 0.72);
     background-blend-mode: luminosity;
     display: flex;

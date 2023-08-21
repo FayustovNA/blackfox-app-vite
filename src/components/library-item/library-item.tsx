@@ -22,7 +22,7 @@ export const LibraryItem: React.FC<LibraryItemProps> = ({
             <div className={styles.section}>
                 <p>{section}</p>
                 <img className={styles.icon} src={Library}></img>
-            </div>
+            </div >
             <div className={styles.maininfo}>
                 <img className={styles.cover} src={img}></img>
                 <div className={styles.iteminfo}>
@@ -34,6 +34,6 @@ export const LibraryItem: React.FC<LibraryItemProps> = ({
                 </div>
             </div>
 
-        </div>
+        </div >
     );
 };

@@ -58,7 +58,9 @@ export const DashBoard: React.FC<DashBoardProps> = ({ }) => {
                     targetWeigth={77}
                     avatar={Avatar}
                 />
-                <WeightPanel />
+                <WeightPanel
+                    total={-15}
+                />
             </div>
             <div className={styles.infopanel}>
                 <ReportsPanel />

@@ -1,0 +1,27 @@
+.mainbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+}
+
+.title {
+    color: #CACACA;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+    /* justify-content: center;
+    align-items: center; */
+    /* margin: 25px auto 20px auto; */
+    /* overflow: scroll; */
+    /* width: calc(100% - 2*35px); */
+    /* height: 300px; */
+    /* overflow: hidden; */
+    gap: 30px;
+}
