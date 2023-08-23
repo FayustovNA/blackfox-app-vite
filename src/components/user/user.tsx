@@ -1,7 +1,7 @@
 import styles from './user.module.css'
 import More from '../../images/more.svg'
 import Location from '../../images/location.svg'
-
+import { NavLink } from 'react-router-dom';
 
 interface UserPanelProps {
     type?: string;
@@ -29,7 +29,7 @@ export const UserPanel: React.FC<UserPanelProps> = ({
 }) => {
     return (
         <div className={`${styles.mainbox}`}>
-            <img src={More} alt="Подробнее" className={styles.more} />
+            <NavLink to={'/settings'} ><img src={More} alt="Подробнее" className={styles.more} /> </NavLink>
             <div className={styles.avatarbox}>
                 <img src={avatar} alt="Аватар" className={styles.avatar} />
             </div>

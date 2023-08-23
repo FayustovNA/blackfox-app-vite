@@ -14,7 +14,7 @@
     display: flex;
     padding: 0;
     justify-content: space-between;
-    margin: 100px auto 15px auto;
+    margin: 60px auto 15px auto;
     width: calc(100% - 25px*2);
 }
 
@@ -35,5 +35,38 @@
 }
 
 .more:hover {
+    opacity: 0.7;
+}
+
+.datepicker {
+    display: flex;
+    align-items: center;
+    margin: 20px auto 0px 30px;
+    padding: 0;
+    gap: 12px;
+}
+
+.date {
+    color: #A59557;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    border-radius: 7px;
+    background: linear-gradient(270deg, #41444B 0%, #2D2C32 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+}
+
+.btn:hover {
     opacity: 0.7;
 }

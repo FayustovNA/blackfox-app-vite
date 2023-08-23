@@ -1,0 +1,82 @@
+.mainbox {
+    width: 345px;
+    height: 100px;
+    border-radius: 20px;
+    background: #2D2C32;
+    font-family: Montserrat;
+    position: relative;
+    font-style: normal;
+    font-weight: 600;
+    color: #CACACA;
+    display: flex;
+}
+
+.link {
+    border-radius: 100px;
+    text-decoration: none;
+    background: #41434A;
+    background-blend-mode: luminosity;
+    display: flex;
+    width: 100px;
+    height: 25px;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 12px;
+}
+
+.link:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.date {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #A7A7A7;
+}
+
+.macros {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 40px 0px 0px 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto 10px auto;
+}
+
+.grid {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    color: #A7A7A7;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    border-right: #A59557 solid 1px;
+}
+
+.grid:last-child {
+    border-right: none;
+}
+
+.unit {
+    font-size: 14px;
+    color: #A59557;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+    margin: auto;
+}
