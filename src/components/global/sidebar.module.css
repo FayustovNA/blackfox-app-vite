@@ -34,6 +34,14 @@
     position: absolute;
     left: 25px;
     bottom: 60px;
+    color: #CACACA;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 .logout:hover {

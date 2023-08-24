@@ -7,6 +7,7 @@
     background: linear-gradient(180deg, #2D2C32 23.44%, #41434A 100%);
     position: relative;
     margin: 0px;
+    font-family: Montserrat;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -27,37 +28,78 @@
     height: 55px;
 }
 
-.btn {
-    background: none;
-    position: absolute;
-    top: 25px;
-    right: 25px;
+.charts {
     display: flex;
+    margin: 0px auto 20px auto;
+    flex-wrap: wrap;
+    gap: 40px;
+    border-bottom: #A7A7A7 solid 1px;
+    height: 150px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+}
+
+.item {
+    width: 70px;
+    height: 70px;
+    font-weight: 700;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitle {
+    color: #A7A7A7;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    padding: 0;
+    margin: 20px auto 0px auto;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    gap: 5px;
+    margin: 5px auto;
+    align-items: start;
+}
+
+.current {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #A59557;
     padding: 0;
     margin: auto;
 }
 
-.btn:hover {
-    transform: rotate(90deg);
-    transition-duration: 1.5s;
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-.charts {
-    width: calc(100% - 2*20px);
-    margin: 10px 0px 0px 0px;
+.target {
+    color: #A7A7A7;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 0;
+    margin: auto;
 }
 
 .bar {
-    width: 100%;
     display: flex;
+    flex-direction: row;
     height: 50px;
-    position: relative;
     justify-content: center;
     padding: 0;
+    width: calc(100% - 2*25px);
+    position: relative;
 }
 
 .titlebar {

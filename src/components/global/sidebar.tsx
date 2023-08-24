@@ -2,16 +2,13 @@ import styles from './sidebar.module.css';
 import { useState } from 'react';
 import Logo from '../logo/logo';
 import { SideBarItem } from './sidebar-item/sidebar-item';
+import { NavLink } from 'react-router-dom';
 import DashboardIcon from '../../images/db.svg'
 import LibraryIcon from '../../images/lib.svg'
 import StatsIcon from '../../images/stat.svg'
 import PayIcon from '../../images/pay.svg'
 import SettingIcon from '../../images/set.svg'
 import LogOutIcon from '../..//images/logout.svg'
-
-
-
-
 
 export const SideBar = ({ }) => {
    const [selected, setSelected] = useState('/');
@@ -28,10 +25,10 @@ export const SideBar = ({ }) => {
             {/* <SideBarItem title={'Оплата'} icon={PayIcon} path={'/progress'} path={'/payouts'} selected={selected} setSelected={setSelected} /> */}
             <SideBarItem title={'Настройки'} icon={SettingIcon} path={'/settings'} selected={selected} setSelected={setSelected} />
          </div>
-         <div className={styles.logout}>
+         <NavLink to={'/signin'} className={styles.logout}>
             <img src={LogOutIcon} alt="Выход" />
             Выход
-         </div>
+         </NavLink>
       </div>
    );
 };

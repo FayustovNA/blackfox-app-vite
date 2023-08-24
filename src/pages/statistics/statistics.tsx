@@ -1,5 +1,7 @@
 import styles from './statistics.module.css';
 import { SmallReport } from '../../components/small-report/small-report';
+import { AntroWidget } from '../../components/antro-widget/antro-widget';
+import { MacrosStatWidget } from '../../components/macros-stat-widget/macros-stat-widget';
 
 
 interface StatisticsProps {
@@ -18,6 +20,8 @@ export const Statistics: React.FC<StatisticsProps> = ({ }) => {
                 fiber={22}
                 kcal={1933}
             />
+            <AntroWidget />
+            <MacrosStatWidget />
         </div>
     );
 };
