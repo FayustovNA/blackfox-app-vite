@@ -31,7 +31,7 @@ export const SmallReport: React.FC<SmallReportProps> = ({
                     <p className={styles.unit}>{protein} g</p>
                 </div>
                 <div className={styles.grid}>
-                    Волокна
+                    Клетчатка
                     <p className={styles.unit}>{fiber} g</p>
                 </div>
             </div>

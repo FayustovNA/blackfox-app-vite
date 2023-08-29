@@ -1,7 +1,10 @@
 import styles from './send-report-widget.module.css';
 import React from 'react';
 import Progress from 'rsuite/Progress';
+import { useState } from 'react';
+import Modal from '../modal/modal';
 import 'rsuite/dist/rsuite-no-reset.min.css';
+import { ReportForm } from '../forms/report/report-form';
 
 
 interface SendReportWidgetProps {
@@ -18,9 +21,19 @@ export const SendReportWidget: React.FC<SendReportWidgetProps> = ({
     extraClass,
 }) => {
 
+    const [isOpenModal, setisOpenModal] = useState(false);
+
+    const openModal = () => {
+        setisOpenModal(true)
+    }
+
+    const closeModal = () => {
+        setisOpenModal(false)
+    }
+
     return (
         <div className={`${styles.mainbox}`}>
-            <div className={styles.iconbox}>
+            <div className={styles.iconbox} onClick={openModal}>
                 <svg className={`${styles.icon} ${extraClass && styles[extraClass]}`} viewBox="0 0 35 35" fill="current" xmlns="http://www.w3.org/2000/svg">
                     <path d="M28.8021 16.0417H18.9583V6.19791C18.9583 5.39145 18.3065 4.73958 17.5 4.73958C16.6935 4.73958 16.0417 5.39145 16.0417 6.19791V16.0417H6.19791C5.39145 16.0417 4.73958 16.6935 4.73958 17.5C4.73958 18.3065 5.39145 18.9583 6.19791 18.9583H16.0417V28.8021C16.0417 29.6085 16.6935 30.2604 17.5 30.2604C18.3065 30.2604 18.9583 29.6085 18.9583 28.8021V18.9583H28.8021C29.6085 18.9583 30.2604 18.3065 30.2604 17.5C30.2604 16.6935 29.6085 16.0417 28.8021 16.0417Z" fill='current' />
                 </svg>
@@ -35,6 +48,10 @@ export const SendReportWidget: React.FC<SendReportWidgetProps> = ({
                 <p className={styles.targetValue}>{targetValue}<span>{extraClass}</span></p>
                 <Progress.Line percent={77} showInfo={false} strokeColor={extraClass === 'kg' ? '#F1A33B' : '#3A82F7' && extraClass === 'kcal' ? '#05CD99' : '#3A82F7'} strokeWidth={7} trailColor='#6A696C' />
             </div>
+
+            {isOpenModal && (<Modal onClose={closeModal}><ReportForm /></Modal>)
+            }
         </div >
+
     );
 };

@@ -1,0 +1,36 @@
+.mainbox {
+    max-width: 650px;
+    width: 650px;
+    height: 345px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: linear-gradient(180deg, #2D2C32 23.44%, #41434A 100%);
+    position: relative;
+    margin: 0px;
+    font-family: Montserrat;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    color: #A7A7A7;
+    font-family: Montserrat;
+    display: flex;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    width: calc(100% - 2*25px);
+    padding: 0;
+    margin: 10px auto;
+    align-items: center;
+    height: 55px;
+}
+
+.chart {
+    width: calc(100% - 2*20px);
+    height: calc(100% - 2*20px);
+    padding: 0;
+    margin: 0px auto 15px auto;
+}

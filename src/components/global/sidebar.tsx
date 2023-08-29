@@ -7,11 +7,13 @@ import DashboardIcon from '../../images/db.svg'
 import LibraryIcon from '../../images/lib.svg'
 import StatsIcon from '../../images/stat.svg'
 import PayIcon from '../../images/pay.svg'
+import ClientsIcon from '../../images/clients.svg'
 import SettingIcon from '../../images/set.svg'
 import LogOutIcon from '../..//images/logout.svg'
 
 export const SideBar = ({ }) => {
    const [selected, setSelected] = useState('/');
+   const [isCoach, setIsCoach] = useState(true);
 
    return (
       <div className={styles.mainbox}>
@@ -19,6 +21,7 @@ export const SideBar = ({ }) => {
             <Logo />
          </div>
          <div className={styles.menu}>
+            {isCoach ? <SideBarItem title={'Клиенты'} icon={ClientsIcon} path={'/clients'} selected={selected} setSelected={setSelected} /> : null}
             <SideBarItem title={'Дэшборд'} icon={DashboardIcon} path={'/'} selected={selected} setSelected={setSelected} />
             <SideBarItem title={'Статистика'} icon={StatsIcon} path={'/statistics'} selected={selected} setSelected={setSelected} />
             <SideBarItem title={'Библиотека'} icon={LibraryIcon} path={'/library'} selected={selected} setSelected={setSelected} />

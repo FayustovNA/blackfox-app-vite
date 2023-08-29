@@ -1,7 +1,5 @@
 import styles from './weight-panel.module.css'
-import ApexChart from '../column-chart/column-chart';
-
-
+import ColumnWeightChart from '../column-chart/column-chart';
 
 interface WeightPanelProps {
     total?: number;
@@ -18,7 +16,7 @@ export const WeightPanel: React.FC<WeightPanelProps> = ({
                 {total} <span className={styles.unit}>kg</span>
             </div>
             <div className={styles.chart}>
-                <ApexChart />
+                <ColumnWeightChart />
             </div>
         </div>
     );

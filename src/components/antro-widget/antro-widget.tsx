@@ -2,22 +2,35 @@ import styles from './antro-widget.module.css'
 import add from '../../images/pluss.svg'
 import Progress from 'rsuite/Progress';
 import 'rsuite/dist/rsuite-no-reset.min.css';
-
-
 import { useState, useEffect } from 'react';
+import Modal from '../modal/modal';
+import { AntroForm } from '../forms/antro-form/antro-form';
 
 interface AntroProps {
     text?: string;
 }
 
+
 export const AntroWidget: React.FC<AntroProps> = ({
 
 }) => {
 
+
+    const [isOpenModal, setisOpenModal] = useState(false);
+
+    const openModal = () => {
+        setisOpenModal(true)
+    }
+
+    const closeModal = () => {
+        setisOpenModal(false)
+    }
+
+
     return (
         <div className={`${styles.mainbox}`}>
             <h2 className={styles.title}>Динамика антропометрии</h2>
-            <button className={styles.btn}><img src={add} alt="add" /></button>
+            <button className={styles.btn}><img className={styles.img} src={add} alt="add" onClick={openModal} /></button>
             <div className={styles.charts}>
                 <div className={styles.bar}>
                     <h4 className={styles.titlebar}>Шея</h4>
@@ -50,7 +63,8 @@ export const AntroWidget: React.FC<AntroProps> = ({
                 </div>
             </div>
 
-
+            {isOpenModal && (<Modal onClose={closeModal}><AntroForm /></Modal>)
+            }
 
         </div >
     );
