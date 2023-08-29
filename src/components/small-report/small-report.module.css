@@ -12,7 +12,7 @@
 }
 
 .link {
-    border-radius: 100px;
+    border-radius: 8px;
     text-decoration: none;
     background: #41434A;
     background-blend-mode: luminosity;

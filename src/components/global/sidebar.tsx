@@ -22,7 +22,7 @@ export const SideBar = ({ }) => {
          </div>
          <div className={styles.menu}>
             {isCoach ? <SideBarItem title={'Клиенты'} icon={ClientsIcon} path={'/clients'} selected={selected} setSelected={setSelected} /> : null}
-            <SideBarItem title={'Дэшборд'} icon={DashboardIcon} path={'/'} selected={selected} setSelected={setSelected} />
+            <SideBarItem title={'Дэшборд'} icon={DashboardIcon} path={'/dashboard'} selected={selected} setSelected={setSelected} />
             <SideBarItem title={'Статистика'} icon={StatsIcon} path={'/statistics'} selected={selected} setSelected={setSelected} />
             <SideBarItem title={'Библиотека'} icon={LibraryIcon} path={'/library'} selected={selected} setSelected={setSelected} />
             {/* <SideBarItem title={'Оплата'} icon={PayIcon} path={'/progress'} path={'/payouts'} selected={selected} setSelected={setSelected} /> */}

@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 interface UserPanelProps {
     type?: string;
     avatar?: any;
-    fullname?: string;
+    username?: string;
     location?: string;
     target?: string;
     startWeigth?: number;
@@ -18,7 +18,7 @@ interface UserPanelProps {
 
 export const UserPanel: React.FC<UserPanelProps> = ({
     avatar,
-    fullname,
+    username,
     location,
     age,
     type,
@@ -34,7 +34,7 @@ export const UserPanel: React.FC<UserPanelProps> = ({
                 <img src={avatar} alt="Аватар" className={styles.avatar} />
             </div>
             <div className={styles.userinfo}>
-                <p className={styles.fullname}>{fullname}</p>
+                <p className={styles.fullname}>{username}</p>
                 <p className={styles.location}><img src={Location} alt="Локация" />{location}</p>
                 <div className={styles.statspanel}>
                     <div className={styles.item}>

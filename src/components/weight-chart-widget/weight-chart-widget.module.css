@@ -23,14 +23,14 @@
     font-weight: 700;
     width: calc(100% - 2*25px);
     padding: 0;
-    margin: 10px auto;
+    margin: 10px auto 0px auto;
     align-items: center;
-    height: 55px;
+    height: 50px;
 }
 
 .chart {
     width: calc(100% - 2*20px);
-    height: calc(100% - 2*20px);
+    height: calc(100% - 2*40px);
     padding: 0;
-    margin: 0px auto 15px auto;
+    margin: 0px auto 10px auto;
 }

@@ -9,6 +9,7 @@ import SignIn from './pages/sign-in/sign-in'
 import SignUp from './pages/sign-up/sign-up'
 import ForgotPassword from './pages/forgot-password/forgot-password'
 import ResetPassword from './pages/reset-password/reset-password'
+import { ClientsPage } from './pages/clients/clients'
 
 
 function App() {
@@ -19,14 +20,15 @@ function App() {
         <SideBar />
         <main className={styles.conttent}>
           <Routes>
-            <Route path='/' element={<DashBoard />}></Route>
+            <Route path='/dashboard' element={<DashBoard />}></Route>
             <Route path='/statistics' element={<Statistics />}></Route>
+            <Route path='/settings' element={<Settings />}></Route>
             <Route path='/library' element={<Library />}></Route>
-            <Route path='/signin' element={<SignIn />}></Route>
+            <Route path='/clients' element={<ClientsPage />}></Route>
+            <Route path='/signins' element={<SignIn />}></Route>
             <Route path='/signup' element={<SignUp />}></Route>
             <Route path='/forgot-password' element={<ForgotPassword />}></Route>
             < Route path='/reset-password' element={<ResetPassword />} />
-            <Route path='/settings' element={<Settings />}></Route>
           </Routes>
         </main>
       </div>

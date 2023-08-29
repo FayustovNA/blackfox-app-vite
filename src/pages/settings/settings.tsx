@@ -21,7 +21,7 @@ export const Settings: React.FC<SettingsProps> = ({ }) => {
             <div className={styles.general}>
                 <div className={styles.maininfo}>
                     <UserPanel
-                        fullname={'Nik Fayustov'}
+                        username={'Nik Fayustov'}
                         location={'Moscow'}
                         age={33}
                         type={'client'}

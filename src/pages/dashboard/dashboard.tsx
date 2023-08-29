@@ -50,7 +50,7 @@ export const DashBoard: React.FC<DashBoardProps> = ({ }) => {
             </div>
             <div className={styles.infopanel}>
                 <UserPanel
-                    fullname={'Nik Fayustov'}
+                    username={'Nik Fayustov'}
                     location={'Moscow'}
                     age={33}
                     type={'client'}

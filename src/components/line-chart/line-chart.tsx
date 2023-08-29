@@ -13,6 +13,11 @@ function LineWeightChart() {
                 name: "Средний недельный вес",
                 data: [77, 77.2, 76, 75.7, 74.7, 74, 74.4, 75, 74.9, 74.9, 72.9, 72]
             },
+            // {
+            //     name: 'Калорийность план',
+            //     type: 'line',
+            //     data: [23, 42, 35, 27, 43, 22, 17, 31, 22, 22, 12, 16]
+            // },
         ],
 
         options: {
@@ -154,7 +159,7 @@ function LineWeightChart() {
 
 
     return (
-        <ReactApexChart options={data.options} series={data.series} type="line" height={285} />
+        <ReactApexChart options={data.options} series={data.series} type="line" height={260} />
     );
 }
 
