@@ -17,7 +17,6 @@ interface WidgetProps {
 export const SmallWidget: React.FC<WidgetProps> = ({
     unit,
     title,
-    icon,
     currentValue,
     targetValue,
     extraClass,

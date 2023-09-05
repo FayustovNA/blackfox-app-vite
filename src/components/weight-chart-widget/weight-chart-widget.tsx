@@ -1,5 +1,4 @@
 import styles from './weight-chart-widget.module.css'
-import Progress from 'rsuite/Progress';
 import 'rsuite/dist/rsuite-no-reset.min.css';
 import LineWeightChart from '../line-chart/line-chart';
 

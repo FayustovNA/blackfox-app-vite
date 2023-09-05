@@ -1,4 +1,3 @@
-import React, { FC } from "react";
 import styles from './tab-filter.module.css';
 import { useState } from "react";
 

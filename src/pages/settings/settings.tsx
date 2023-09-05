@@ -1,5 +1,5 @@
 import styles from './setting.module.css';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Avatar from '../../images/avatar.svg'
 import { UserPanel } from '../../components/user/user';
 
@@ -10,7 +10,7 @@ interface SettingsProps {
 
 export const Settings: React.FC<SettingsProps> = ({ }) => {
 
-    const [profileData, setProfileData] = useState({});
+    // const [profileData, setProfileData] = useState({});
 
     return (
         <div className={`${styles.mainbox}`}>

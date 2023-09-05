@@ -15,9 +15,7 @@ export const SideBar = ({ }) => {
    const [selected, setSelected] = useState('/');
    const [isCoach, setIsCoach] = useState(true);
 
-   const onClick = () => {
-      setIsCoach(true)
-   }
+   setIsCoach(true);
 
    return (
       <div className={styles.mainbox}>

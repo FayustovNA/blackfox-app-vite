@@ -1,8 +1,4 @@
 import styles from './small-report.module.css';
-import Fleme from '../../images/flame.svg'
-import Calories from '../../images/calories.svg'
-import Steps from '../../images/feets.svg'
-import Person from '../../images/person.svg'
 
 interface SmallReportProps {
     kcal?: number;
