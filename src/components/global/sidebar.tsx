@@ -6,7 +6,7 @@ import { NavLink } from 'react-router-dom';
 import DashboardIcon from '../../images/db.svg'
 import LibraryIcon from '../../images/lib.svg'
 import StatsIcon from '../../images/stat.svg'
-import PayIcon from '../../images/pay.svg'
+// import PayIcon from '../../images/pay.svg'
 import ClientsIcon from '../../images/clients.svg'
 import SettingIcon from '../../images/set.svg'
 import LogOutIcon from '../..//images/logout.svg'
@@ -14,6 +14,10 @@ import LogOutIcon from '../..//images/logout.svg'
 export const SideBar = ({ }) => {
    const [selected, setSelected] = useState('/');
    const [isCoach, setIsCoach] = useState(true);
+
+   const onClick = () => {
+      setIsCoach(true)
+   }
 
    return (
       <div className={styles.mainbox}>

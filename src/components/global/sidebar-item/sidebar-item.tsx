@@ -1,5 +1,5 @@
 import styles from './sidebar-item.module.css'
-import { NavLink, useMatch, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 interface SideBarItemProps {

@@ -2,7 +2,7 @@ import styles from './antro-widget.module.css'
 import add from '../../images/pluss.svg'
 import Progress from 'rsuite/Progress';
 import 'rsuite/dist/rsuite-no-reset.min.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Modal from '../modal/modal';
 import { AntroForm } from '../forms/antro-form/antro-form';
 

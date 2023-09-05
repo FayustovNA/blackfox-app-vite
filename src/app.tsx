@@ -1,6 +1,6 @@
 import styles from './app.module.css'
 import { SideBar } from './components/global/sidebar'
-import { Routes, Route, useMatch } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { DashBoard } from './pages/dashboard/dashboard'
 import { Statistics } from './pages/statistics/statistics'
 import { Library } from './pages/library/library'

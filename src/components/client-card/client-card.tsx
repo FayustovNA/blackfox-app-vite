@@ -8,7 +8,6 @@ import Down from '../../images/down.svg';
 
 
 interface ClientCardItemProps {
-    id?: any;
     username?: string;
     avatar?: any;
     deltaweight?: any;
@@ -17,7 +16,6 @@ interface ClientCardItemProps {
 }
 
 export const ClientCard: React.FC<ClientCardItemProps> = ({
-    id,
     username,
     avatar,
     deltaweight,

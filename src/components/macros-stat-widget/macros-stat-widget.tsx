@@ -1,7 +1,7 @@
 import styles from './macros-stat-widget.module.css'
 import Progress from 'rsuite/Progress';
 import 'rsuite/dist/rsuite-no-reset.min.css';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import TabsFilter from '../tab-filter/tab-filter';
 
 interface MacrosProps {
