@@ -13,9 +13,11 @@ import LogOutIcon from '../..//images/logout.svg'
 
 export const SideBar = ({ }) => {
    const [selected, setSelected] = useState('/');
-   const [isCoach, setIsCoach] = useState(true);
+   // const [isCoach, setIsCoach] = useState(true);
 
-   setIsCoach(true);
+   // setIsCoach(true);
+
+   const isCoach = true;
 
    return (
       <div className={styles.mainbox}>
