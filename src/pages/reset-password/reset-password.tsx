@@ -1,4 +1,3 @@
-import React, { FormEvent } from 'react'
 import styles from './reset-password.module.css'
 import { Link } from 'react-router-dom'
 import imgLogo from '../../images/sm-logo.svg';

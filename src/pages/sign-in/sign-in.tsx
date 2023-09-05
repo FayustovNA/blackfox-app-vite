@@ -1,4 +1,4 @@
-import React, { FormEvent } from 'react'
+import { FormEvent } from 'react'
 import styles from './sign-in.module.css'
 import useForm from '../../hooks/useForm'
 import { Link } from 'react-router-dom'
