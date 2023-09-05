@@ -21,6 +21,13 @@
   overflow: scroll;
 }
 
+@media (max-width: 480px) {
+  .conttent {
+    padding: 10px 10px 10px 10px;
+    margin: 0px auto 50px auto;
+  }
+}
+
 /* ::-webkit-scrollbar {
   width: 10px;
 }

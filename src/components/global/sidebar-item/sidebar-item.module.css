@@ -36,3 +36,32 @@
     padding: 0;
     list-style-type: none;
 }
+
+@media (max-width: 767px) {
+    .item {
+        width: 40px;
+        height: 40px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+    }
+
+    .item:hover {
+        background: #41444B;
+    }
+
+    .active {
+        background: #41444B;
+    }
+}

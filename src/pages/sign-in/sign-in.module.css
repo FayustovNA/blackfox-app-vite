@@ -9,6 +9,7 @@
     flex-direction: column;
     font-family: Montserrat;
     position: relative;
+    overflow: scroll;
 }
 
 .title {
@@ -144,4 +145,33 @@ input:-webkit-autofill {
 .img {
     width: 25px;
     height: 25px;
+}
+
+@media (max-width: 767px) {
+    .linksblock {
+        margin: 30px auto 30px auto;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin: 30px auto 30px auto;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .img {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+    }
+
+    .name {
+        margin: 10px auto;
+    }
+
 }

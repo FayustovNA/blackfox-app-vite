@@ -20,7 +20,7 @@ export const SideBarItem: React.FC<SideBarItemProps> = ({
 
     return (
         <NavLink to={path} className={`${styles.item} ${selected === path && styles.active}`} onClick={() => setSelected(path)}>
-            <img className={styles.icon} src={icon}></img>
+            <img className={`${styles.icon} ${selected === path && styles.active}`} src={icon}></img>
             <h2 className={styles.title}>
                 {title}
             </h2>

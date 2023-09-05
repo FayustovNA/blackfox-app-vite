@@ -25,3 +25,21 @@
     /* overflow: hidden; */
     gap: 30px;
 }
+
+@media (max-width: 480px) {
+    .grid {
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+        padding: 0px;
+        justify-content: center;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .title {
+        color: #CACACA;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+    }
+}
