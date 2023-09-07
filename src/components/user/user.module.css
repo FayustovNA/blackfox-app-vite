@@ -1,5 +1,4 @@
-.mainbox {
-    max-width: 450px;
+.mainboxuser {
     width: 400px;
     height: 345px;
     flex-shrink: 0;

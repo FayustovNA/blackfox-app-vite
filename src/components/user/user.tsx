@@ -28,7 +28,7 @@ export const UserPanel: React.FC<UserPanelProps> = ({
     countReports
 }) => {
     return (
-        <div className={`${styles.mainbox}`}>
+        <div className={styles.mainboxuser}>
             <NavLink to={'/settings'} ><img src={More} alt="Подробнее" className={styles.more} /> </NavLink>
             <div className={styles.avatarbox}>
                 <img src={avatar} alt="Аватар" className={styles.avatar} />
