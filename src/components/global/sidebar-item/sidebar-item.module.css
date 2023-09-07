@@ -37,7 +37,7 @@
     list-style-type: none;
 }
 
-@media (max-width: 767px) and (max-height: 850px) {
+@media (max-width: 767px) and (max-height: 870px) {
     .item {
         width: 40px;
         height: 40px;
