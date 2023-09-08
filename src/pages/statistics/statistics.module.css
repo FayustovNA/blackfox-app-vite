@@ -29,3 +29,36 @@
     padding: 0;
     margin: 0;
 }
+
+
+@media (max-width: 420px) {
+    .topwidgets {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .infopanel {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        gap: 30px;
+        margin: 30px auto 0px 0px;
+    }
+}
+
+@media (min-width: 1199px) {
+    .topwidgets {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .infopanel {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+}

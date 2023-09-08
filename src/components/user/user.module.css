@@ -111,3 +111,9 @@
 .unitvalue {
     font-size: 14px;
 }
+
+@media (min-width: 275px) and (max-width: 420px) {
+    .mainboxuser {
+        width: 100%;
+    }
+}

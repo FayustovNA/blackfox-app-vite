@@ -1,8 +1,7 @@
 .mainbox {
     display: flex;
     flex-direction: column;
-    margin: auto;
-    width: 100%;
+    max-width: 1680px;
 }
 
 .title {
@@ -86,9 +85,10 @@
 
 @media (min-width: 1681px) {
     .grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: start;
         padding: 0;
+        margin: auto auto auto 0px;
         gap: 20px;
     }
 }

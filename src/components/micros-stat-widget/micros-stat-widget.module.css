@@ -128,3 +128,44 @@
     font-style: normal;
     font-weight: 700;
 }
+
+@media (max-width: 420px) {
+    .mainbox {
+        width: 100%;
+        height: 530px;
+    }
+
+    .charts {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 230px;
+        flex-wrap: wrap;
+        /* border-bottom: #A7A7A7 solid 1px; */
+    }
+
+    .circle {
+        width: 90%;
+        border-top: #A7A7A7 solid 1px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        margin: 15px auto 20px auto;
+    }
+
+    .titlecircle {
+        padding: 0;
+        margin: 10px auto 15px auto;
+    }
+
+
+    .bars {
+        width: 90%;
+        display: flex;
+        margin: auto;
+    }
+
+}

@@ -80,3 +80,9 @@
     padding: 0;
     margin: auto;
 }
+
+@media (max-width: 420px) {
+    .mainbox {
+        width: 100%;
+    }
+}

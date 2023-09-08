@@ -112,3 +112,9 @@
     font-style: normal;
     font-weight: 700;
 }
+
+@media (max-width: 420px) {
+    .mainbox {
+        width: 100%;
+    }
+}
