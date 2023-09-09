@@ -1,5 +1,4 @@
 .mainbox {
-    max-width: 470px;
     width: 470px;
     height: 345px;
     flex-shrink: 0;
@@ -113,8 +112,9 @@
     font-weight: 700;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
     .mainbox {
         width: 100%;
+        max-width: 650px;
     }
 }

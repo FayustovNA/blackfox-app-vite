@@ -31,11 +31,18 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 767px) {
+
+    .mainbox {
+        justify-content: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
     .topwidgets {
         display: flex;
         flex-direction: column;
-        margin: auto;
         gap: 10px;
         justify-content: center;
     }
