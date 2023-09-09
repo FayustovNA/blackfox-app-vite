@@ -87,3 +87,19 @@
         max-width: 650px;
     }
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainbox {
+        width: 100%;
+        min-width: 245px;
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
+    .mainbox {
+        width: 100%;
+        min-width: 245px;
+        max-width: 650px;
+    }
+}

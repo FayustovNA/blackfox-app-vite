@@ -169,3 +169,53 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainbox {
+        width: 100%;
+        max-width: 650px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1480px) {
+    .mainbox {
+        width: 100%;
+        height: 500px;
+    }
+
+    .charts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bars {
+        width: calc(100% - 2*20px);
+        padding: 0;
+        margin: 0px auto auto 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titlecircle {
+        font-size: 14px;
+        color: #A7A7A7;
+        width: 100%;
+        padding: 0;
+        margin: 0px auto 15px auto;
+        text-align: center;
+    }
+
+
+
+    .item {
+        width: 90px;
+        height: 90px;
+        font-weight: 700;
+
+    }
+
+    .score {
+        top: 25px;
+        left: 25px;
+    }
+}

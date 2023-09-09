@@ -15,7 +15,7 @@
 }
 
 .conttent {
-  width: 100vw;
+  width: 90%;
   padding: 40px 30px 30px 30px;
   margin: 0;
   overflow: scroll;
@@ -25,6 +25,7 @@
   .conttent {
     padding: 10px 10px 10px 10px;
     margin: 0px auto 50px auto;
+    justify-content: center;
   }
 }
 

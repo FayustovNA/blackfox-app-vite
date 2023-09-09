@@ -1,5 +1,5 @@
 .mainbox {
-    max-width: 650px;
+    /* max-width: 650px; */
     width: 650px;
     height: 345px;
     flex-shrink: 0;
@@ -36,6 +36,18 @@
 }
 
 @media (max-width: 767px) {
+    .mainbox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .mainbox {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1350px) {
     .mainbox {
         width: 100%;
     }
