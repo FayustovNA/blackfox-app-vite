@@ -23,7 +23,7 @@ function ColumnWeightChart() {
             },
             plotOptions: {
                 bar: {
-                    borderRadius: 8,
+                    borderRadius: 5,
                     colors: {
                         ranges: [{
                             from: -5,
@@ -107,7 +107,7 @@ function ColumnWeightChart() {
 
 
         <div id="chart">
-            <ReactApexChart options={data.options} series={data.series} type="bar" height={220} width={655} />
+            <ReactApexChart options={data.options} series={data.series} type="bar" height={220} />
         </div>
 
     );

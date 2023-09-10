@@ -25,3 +25,9 @@
     gap: 10px;
     color: #EB4B62;
 }
+
+@media (max-width: 767px) {
+    .status {
+        top: 70px;
+    }
+}
