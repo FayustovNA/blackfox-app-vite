@@ -1,7 +1,10 @@
 .mainbox {
     display: flex;
     flex-direction: column;
-    max-width: 1680px;
+    max-width: 1150px;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
 }
 
 .title {

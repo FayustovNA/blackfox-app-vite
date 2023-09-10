@@ -112,7 +112,7 @@
     font-size: 14px;
 }
 
-@media (min-width: 275px) and (max-width: 420px) {
+@media (min-width: 275px) and (max-width: 475px) {
     .mainboxuser {
         width: 100%;
     }

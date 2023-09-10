@@ -96,7 +96,7 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1350px) {
+@media (min-width: 992px) and (max-width: 1480px) {
     .mainbox {
         width: 100%;
         min-width: 245px;

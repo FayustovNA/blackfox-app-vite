@@ -18,20 +18,20 @@
 
 .form {
     max-width: 400px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: calc(100% - 2*10px);
     display: flex;
     padding: 0;
     gap: 20px;
     flex-direction: column;
-    background: #1C1C21;
     border-radius: 20px;
 }
 
 .input {
-    width: 300px;
+    width: calc(100% - 2*10px);
     color: #A7A7A7;
     height: 40px;
     background: linear-gradient(180deg, #2F2E34 23.44%, #41434A 100%);
@@ -70,7 +70,7 @@ input:-webkit-autofill {
 }
 
 .btn {
-    width: 300px;
+    width: calc(100% - 2*10px);
     height: 40px;
     border-radius: 10px;
     border: none;

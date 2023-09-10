@@ -16,7 +16,7 @@ export const ReportForm: React.FC<ReportFormProps> = ({ }) => {
             <form className={styles.form}>
                 <input
                     className={styles.input}
-                    placeholder='Утренний вес (например, 67.5)'
+                    placeholder='Утренний вес (67.5)'
                     name='curentweight'
                     autoComplete='off'
                 />
