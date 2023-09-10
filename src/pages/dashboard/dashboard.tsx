@@ -49,15 +49,17 @@ export const DashBoard: React.FC<DashBoardProps> = ({ }) => {
                 />
             </div>
             <div className={styles.infopanel}>
-                <UserPanel
-                    username={'Nik Fayustov'}
-                    location={'Moscow'}
-                    age={33}
-                    type={'client'}
-                    startWeigth={82}
-                    targetWeigth={77}
-                    avatar={Avatar}
-                />
+                <div className={styles.userinfo}>
+                    <UserPanel
+                        username={'Nik Fayustov'}
+                        location={'Moscow'}
+                        age={33}
+                        type={'client'}
+                        startWeigth={82}
+                        targetWeigth={77}
+                        avatar={Avatar}
+                    />
+                </div>
                 <WeightPanel
                     total={-15}
                 />

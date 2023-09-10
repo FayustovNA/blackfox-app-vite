@@ -26,7 +26,7 @@
     color: #EB4B62;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1480) {
     .status {
         top: 70px;
     }

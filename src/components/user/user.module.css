@@ -117,3 +117,9 @@
         width: 100%;
     }
 }
+
+@media (min-width: 992px) and (max-width: 1480px) {
+    .mainboxuser {
+        width: 100%;
+    }
+}

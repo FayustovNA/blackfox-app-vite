@@ -81,20 +81,13 @@
     margin: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .mainbox {
         width: 100%;
         max-width: 650px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .mainbox {
-        width: 100%;
-        min-width: 245px;
-        max-width: 650px;
-    }
-}
 
 @media (min-width: 992px) and (max-width: 1480px) {
     .mainbox {
