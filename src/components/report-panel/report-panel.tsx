@@ -16,7 +16,9 @@ export const ReportsPanel: React.FC<ReportsPanelProps> = ({
 }) => {
     return (
         <div className={styles.mainbox}>
-            <StatusReport isDone />
+            <div className={styles.status}>
+                <StatusReport isDone />
+            </div>
             <div className={styles.datepicker}>
                 <button className={styles.btn}>
                     <img src={Prev} alt="prev" />

@@ -96,6 +96,12 @@
         gap: 12px;
     }
 
+    .status {
+        position: relative;
+        top: 60px;
+        right: 10px;
+    }
+
 }
 
 

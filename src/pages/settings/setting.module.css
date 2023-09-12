@@ -107,10 +107,11 @@ input:-webkit-autofill {
 @media (min-width: 275px) and (max-width: 475px) {
     .form {
         width: 100%;
+        gap: 10px;
     }
 
     .input {
-        width: 100%;
+        width: 90%;
         max-width: 400px;
     }
 

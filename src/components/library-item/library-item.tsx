@@ -20,7 +20,7 @@ export const LibraryItem: React.FC<LibraryItemProps> = ({
     return (
         <div className={`${styles.mainbox}`}>
             <div className={styles.section}>
-                <p>{section}</p>
+                <p className={styles.sectiontitle}>{section}</p>
                 <img className={styles.icon} src={Library}></img>
             </div >
             <div className={styles.maininfo}>
