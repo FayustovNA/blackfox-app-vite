@@ -49,6 +49,7 @@
 @media (min-width: 381px) and (max-width: 767px) {
     .grid {
         display: flex;
+        width: 100%;
         flex-direction: column;
         overflow: scroll;
         padding: 0px;
