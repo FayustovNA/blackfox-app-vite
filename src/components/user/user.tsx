@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from './user.module.css'
 import More from '../../images/more.svg'
 import Location from '../../images/location.svg'

@@ -1,21 +1,30 @@
 import { FormEvent } from 'react'
 import styles from './sign-in.module.css'
 import useForm from '../../hooks/useForm'
+import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import imgLogo from '../../images/sm-logo.svg';
+import { signIn } from '../../services/slices/userSlice'
 
-// import { useDispatch } from '../../services/hooks'
+import { useDispatch } from '../../services/hooks'
 
 const SignIn = () => {
     const { values, handleChange } = useForm({
         email: '',
         password: '',
     })
-    // const dispatch = useDispatch()
+
+
+    const navigate = useNavigate();
+    const dispatch = useDispatch()
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        // dispatch(loginUser(values))
+        dispatch(signIn(values)).then((result) => {
+            if (result) {
+                navigate('/dashboard')
+            }
+        })
     }
 
     return (

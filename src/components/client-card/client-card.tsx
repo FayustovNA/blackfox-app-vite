@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { NavLink } from 'react-router-dom';
 import Modal from '../modal/modal';
 import { useState } from 'react';
@@ -11,6 +12,9 @@ interface ClientCardItemProps {
     username?: string;
     avatar?: any;
     deltaweight?: any;
+    currentweight?: any;
+    startweight?: any;
+    daysin?: any;
     kcal?: any;
     targetkcal?: any;
 }
@@ -19,6 +23,9 @@ export const ClientCard: React.FC<ClientCardItemProps> = ({
     username,
     avatar,
     deltaweight,
+    currentweight,
+    startweight,
+    daysin,
     targetkcal,
     kcal
 }) => {
@@ -36,12 +43,23 @@ export const ClientCard: React.FC<ClientCardItemProps> = ({
     return (
         <div className={`${styles.mainbox}`}>
 
-            <div className={styles.avatarbox}>
-                <img src={avatar} alt="Аватар" className={styles.avatar} />
+            <div className={styles.firstinfo}>
+                <div className={styles.avatarandname}>
+                    <div className={styles.avatarbox}>
+                        <img src={avatar} alt="Аватар" className={styles.avatar} />
+                    </div>
+                    <h3 className={styles.username}>{username}</h3>
+
+                </div>
+
+                <div className={styles.weights}>
+                    <p className={styles.smalltext}>Стартовый вес: <span className={styles.h5}> {startweight} kg</span></p>
+                    <p className={styles.smalltext}>Текуший вес:  <span className={styles.h5}>{currentweight} kg</span></p>
+                    <p className={styles.smalltext}>Дней в проекте:<span className={styles.h5}>{daysin} </span></p>
+                </div>
             </div>
 
             <div className={styles.maininfo}>
-                <h3 className={styles.username}>{username}</h3>
                 <div className={styles.info}>
                     <p className={styles.delta}>
                         {deltaweight} kg {deltaweight > 0 ? <img className={styles.img} src={Up}></img> : <img className={styles.img} src={Down}></img>}
@@ -56,7 +74,8 @@ export const ClientCard: React.FC<ClientCardItemProps> = ({
                 </div>
             </div>
 
-            {isOpenModal && (<Modal onClose={closeModal}><SetPlan /></Modal>)
+            {
+                isOpenModal && (<Modal onClose={closeModal}><SetPlan /></Modal>)
             }
         </div >
     );

@@ -1,3 +1,4 @@
+/* eslint-disable no-empty-pattern */
 import styles from './dashboard.module.css';
 import { SmallWidget } from '../../components/small-widget/small-widget';
 import { UserPanel } from '../../components/user/user';
@@ -8,6 +9,7 @@ import { WeightPanel } from '../../components/weight-panel/weight-panel';
 
 
 interface DashBoardProps {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     img?: any;
 }
 
@@ -15,7 +17,7 @@ export const DashBoard: React.FC<DashBoardProps> = ({ }) => {
     return (
         <div className={styles.mainbox}>
             <h1 className={styles.title}>
-                Welcome to BlackFox!
+                Ваша рабочая панель
             </h1>
             <div className={styles.topwidgets}>
                 <SmallWidget

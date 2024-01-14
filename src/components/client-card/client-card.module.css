@@ -1,13 +1,25 @@
 .mainbox {
     max-width: 500px;
-    height: 260px;
+    min-height: 240px;
     flex-shrink: 0;
     border-radius: 22px;
-    background: linear-gradient(180deg, #2D2C32 22.92%, #41444B 100%);
-    display: flex;
-    flex-direction: column;
+    /* background: rgba(255, 255, 255, 0.1); */
+    background: var(--background-gradient);
     margin: auto;
     justify-content: center;
+}
+
+.firstinfo {
+    width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+.avatarandname {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 20px;
 }
 
 .maininfo {
@@ -19,13 +31,25 @@
     font-family: Montserrat;
 }
 
+.weights {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    font-family: Montserrat;
+    width: 50%;
+}
+
 .avatarbox {
     width: 80px;
     height: 80px;
     padding: 0;
     border-radius: 100%;
-    margin: 20px auto 0 auto;
-    background: linear-gradient(180deg, #151518 0%, #2D2C32 100%);
+    margin: 0 auto 0 auto;
+    border: var(--border-light);
+    display: flex;
+    flex-direction: column;
 }
 
 .avatar {
@@ -36,7 +60,9 @@
 }
 
 .username {
-    font-size: 18px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
     padding: 0;
     margin: 10px auto 0px auto;
 }
@@ -46,7 +72,8 @@
     height: 50px;
     font-size: 16px;
     font-weight: 700;
-    color: #A59557;
+    /* color: #A59557; */
+    color: #C8AB58;
     display: flex;
     flex-direction: row;
     margin: 10px auto 0px auto;
@@ -82,7 +109,9 @@
 .link {
     border-radius: 10px;
     text-decoration: none;
-    background: rgba(45, 44, 50, 0.72);
+    /* background: rgba(45, 44, 50, 0.72); */
+    /* background: #242424; */
+    background: #3E4B5A;
     background-blend-mode: luminosity;
     width: 40%;
     display: flex;
@@ -101,11 +130,26 @@
     cursor: pointer;
 }
 
+.smalltext {
+    padding: 0;
+    margin: 0;
+    margin-left: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+}
+
+.h5 {
+    padding: 0 5px;
+    font-weight: 400;
+    font-size: 12px;
+}
+
 
 @media (max-width: 767px) {
     .mainbox {
         width: 100%;
-        height: 260px;
+        height: 240px;
         position: relative;
     }
 }
@@ -113,7 +157,7 @@
 @media (min-width: 768px) and (max-width: 991px) {
     .mainbox {
         width: 400px;
-        height: 260px;
+        height: 240px;
         position: relative;
     }
 }
@@ -121,7 +165,7 @@
 @media (min-width: 992px) {
     .mainbox {
         width: 100%;
-        height: 260px;
+        height: 240px;
         position: relative;
     }
 }
@@ -129,7 +173,7 @@
 @media (min-width: 1680px) {
     .mainbox {
         width: 365px;
-        height: 260px;
+        height: 240px;
         position: relative;
     }
 }

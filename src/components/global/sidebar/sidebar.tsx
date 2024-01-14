@@ -1,6 +1,6 @@
 import styles from './sidebar.module.css';
 import { useState } from 'react';
-import Logo from '../logo/logo';
+import Logo from '../../logo/logo';
 import { SideBarItem } from './sidebar-item/sidebar-item';
 import { NavLink } from 'react-router-dom';
 import DashboardIcon from '../../images/db.svg'
@@ -11,7 +11,7 @@ import ClientsIcon from '../../images/clients.svg'
 import SettingIcon from '../../images/set.svg'
 import LogOutIcon from '../..//images/logout.svg'
 
-export const SideBar = ({ }) => {
+export const SideBar = () => {
    const [selected, setSelected] = useState('/');
    // const [isCoach, setIsCoach] = useState(true);
 

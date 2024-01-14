@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from './sidebar-item.module.css'
 import { NavLink } from 'react-router-dom';
 

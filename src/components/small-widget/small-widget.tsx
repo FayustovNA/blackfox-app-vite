@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import styles from './small-widget.module.css';
 import Fleme from '../../images/flame.svg'
 import Calories from '../../images/calories.svg'

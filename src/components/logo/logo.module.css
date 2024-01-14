@@ -2,6 +2,7 @@
     width: 250px;
     height: 70px;
     border-radius: 10px;
+    background: none;
     background: linear-gradient(180deg, #1C1C21 0%, #2D2C32 100%);
     display: flex;
     font-family: 'BlenderPro';

@@ -1,5 +1,5 @@
 import styles from './app.module.css'
-import { SideBar } from './components/global/sidebar'
+// import { SideBar } from './components/global/sidebar'
 import { Routes, Route } from 'react-router-dom'
 import { DashBoard } from './pages/dashboard/dashboard'
 import { Statistics } from './pages/statistics/statistics'
@@ -10,16 +10,19 @@ import SignUp from './pages/sign-up/sign-up'
 import ForgotPassword from './pages/forgot-password/forgot-password'
 import ResetPassword from './pages/reset-password/reset-password'
 import { ClientsPage } from './pages/clients/clients'
-
+import { Header } from './components/global/header/header'
+import { MainPage } from './pages/main/main-page'
 
 function App() {
 
   return (
     <>
       <div className={styles.app}>
-        <SideBar />
+        {/* <SideBar /> */}
+        <Header />
         <main className={styles.conttent}>
           <Routes>
+            <Route path='/' element={<MainPage />}></Route>
             <Route path='/dashboard' element={<DashBoard />}></Route>
             <Route path='/statistics' element={<Statistics />}></Route>
             <Route path='/settings' element={<Settings />}></Route>

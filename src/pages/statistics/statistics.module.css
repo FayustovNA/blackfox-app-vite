@@ -1,14 +1,14 @@
 .mainbox {
     display: flex;
     flex-direction: column;
-    margin: auto;
+    margin: auto auto 20px auto;
     width: 100%;
     max-width: 1150px;
 }
 
 .title {
     color: #CACACA;
-    font-size: 34px;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
 }

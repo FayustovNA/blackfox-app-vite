@@ -6,7 +6,7 @@
     margin: 0;
     position: relative;
     border-radius: 20px;
-    background: linear-gradient(180deg, #41444B 0%, rgba(45, 44, 50, 0.00) 100%);
+    background: var(--background-gradient);
 }
 
 .title {

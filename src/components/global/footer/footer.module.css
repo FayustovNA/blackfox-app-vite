@@ -1,0 +1,49 @@
+.footer {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 22px;
+    background: rgba(23, 28, 34, 0.4);
+    /* position: absolute; */
+    bottom: 0px;
+}
+
+.line {
+    height: 15px;
+    width: 100%;
+    border-bottom: var(--background-light) solid 1px;
+}
+
+.footer_legal_copyright {
+    margin: 10px auto 10px auto;
+    color: #86868b;
+    font-size: 12px;
+    font-family: Montserrat;
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+.footer_legal_links {
+    width: 100%;
+    margin: 10px auto 20px auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.link {
+    font-size: 12px;
+    font-style: normal;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--main-text);
+    border-right: 1px solid var(--background-light);
+    padding-right: 20px;
+}
+
+.link:hover {
+    color: var(--gold);
+}

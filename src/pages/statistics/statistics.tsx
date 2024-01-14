@@ -14,7 +14,7 @@ export const Statistics: React.FC<StatisticsProps> = ({ }) => {
     return (
         <div className={`${styles.mainbox}`}>
             <h1 className={styles.title}>
-                Статистика
+                Ваша статистика
             </h1>
             <div className={styles.topwidgets}>
                 <SmallReport

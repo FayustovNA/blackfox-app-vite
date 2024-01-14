@@ -1,10 +1,10 @@
 import { FormEvent } from 'react'
 import styles from './sign-up.module.css'
 import useForm from '../../hooks/useForm'
-import { Link } from 'react-router-dom'
-import imgLogo from '../../images/sm-logo.svg';
-
-// import { useDispatch } from '../../services/hooks'
+import { Link, useNavigate } from 'react-router-dom'
+import imgLogo from '../../images/sm-logo.svg'
+import { registerUser } from '../../services/slices/registerSlice'
+import { useDispatch } from '../../services/hooks'
 
 const SignUp = () => {
     const { values, handleChange } = useForm({
@@ -14,8 +14,8 @@ const SignUp = () => {
         confirmPassword: '',
     })
 
-    //     const navigate = useNavigate()
-    //   const dispatch = useDispatch()
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const checkSignUpValidity = (): boolean => {
         return (
@@ -29,8 +29,8 @@ const SignUp = () => {
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (checkSignUpValidity()) {
-            // dispatch(registerUser(values))
-            // navigate('/signin')
+            dispatch(registerUser(values))
+            navigate('/signin')
         } else {
             console.error('Нужно заполнить все данные')
         }

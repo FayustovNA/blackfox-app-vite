@@ -1,0 +1,118 @@
+.container {
+    width: 100%;
+    height: 400px;
+    /* background: #fafafc; */
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 15px 15px 15px 15px;
+    transition: transform .3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.container:hover {
+    transform: scale(1.03);
+    transition: transform .3s cubic-bezier(0, 0, 0.5, 1);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+    border-radius: 15px;
+}
+
+.itemcontent {
+    transition: opacity 0.3s ease;
+    transition-duration: 0.5s;
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 20px 20px 20px 20px; */
+}
+
+.titlemain {
+    color: var(--main-text-color);
+    font-size: 25px;
+    line-height: 1.1428571429;
+    font-weight: 700;
+    letter-spacing: .007em;
+    width: 80%;
+    margin: 10px auto auto 30px;
+}
+
+.subtitlemain {
+    color: var(--main-text-color);
+    font-size: 16px;
+    font-weight: 400;
+    margin: 10px auto 0px 30px;
+}
+
+.btn {
+    position: absolute;
+    left: calc(100% - 55px);
+    top: calc(100% - 45px);
+    display: flex;
+    margin: auto;
+    display: block;
+    transition-duration: 0.5s;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.active {
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
+}
+
+.icon {
+    display: flex;
+    margin: auto;
+}
+
+.icon * {
+    fill: #fafafc;
+}
+
+
+.fadeIn {
+    opacity: 1;
+}
+
+.fadeOut {
+    opacity: 0;
+}
+
+.container.fadeIn {
+    background-color: #ffffff;
+}
+
+.container.fadeOut {
+    background-color: #f8f8f8;
+}
+
+.content.fadeIn {
+    opacity: 1;
+}
+
+.content.fadeOut {
+    opacity: 0;
+}
+
+.itemcontent.fadeIn {
+    opacity: 1;
+}
+
+.itemcontent.fadeOut {
+    opacity: 0;
+}

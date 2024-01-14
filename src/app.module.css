@@ -2,9 +2,8 @@
   width: 100vw;
   height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
-  background: #1C1C21;
 }
 
 .app {
@@ -16,14 +15,15 @@
 
 .conttent {
   width: 100%;
-  /* padding: 40px 30px 30px 30px; */
-  margin: 0;
+  margin: 70px auto 0px auto;
   overflow: scroll;
+  /* overflow: hidden; */
+  /* z-index: 0; */
 }
 
 @media (max-width: 767px) {
   .conttent {
-    /* padding: 10px 10px 10px 10px; */
+    padding: 10px 10px 10px 10px;
     margin: 0px auto 50px auto;
     justify-content: center;
   }

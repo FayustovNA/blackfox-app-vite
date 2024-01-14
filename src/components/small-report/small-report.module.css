@@ -2,7 +2,7 @@
     width: 360px;
     height: 100px;
     border-radius: 20px;
-    background: #2D2C32;
+    background: var(--background-gradient);
     font-family: Montserrat;
     position: relative;
     font-style: normal;
@@ -14,7 +14,7 @@
 .link {
     border-radius: 8px;
     text-decoration: none;
-    background: #41434A;
+    background: var(--background-light);
     background-blend-mode: luminosity;
     display: flex;
     width: 100px;
@@ -74,7 +74,7 @@
 
 .unit {
     font-size: 14px;
-    color: #A59557;
+    color: var(--gold);
     font-style: normal;
     font-weight: 700;
     padding: 0;

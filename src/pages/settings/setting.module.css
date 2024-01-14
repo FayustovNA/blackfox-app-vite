@@ -1,35 +1,122 @@
-.mainbox {
+.accountsummary {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: auto;
-    width: 100%;
+    height: 100%;
+    /* justify-content: center; */
     overflow: scroll;
-    max-width: 1150px;
+    /* max-width: 1150px; */
+    flex-wrap: nowrap;
 }
 
 .title {
     color: #CACACA;
-    font-size: 34px;
+    max-width: 1150px;
+    width: 100%;
+    font-size: 25px;
     font-style: normal;
     font-weight: 700;
+    display: flex;
+    margin: 16.75px auto auto auto;
 }
 
-.general {
+.content {
+    max-width: 1150px;
     display: flex;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
     width: 100%;
-    padding: 0;
-    /* align-items: center; */
+    margin: auto;
 }
 
 .maininfo {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: var(--background-light) solid 1px;
+}
+
+.maininfolabel {
+    display: flex;
+    flex-basis: 30%;
+    padding: 0;
+    flex-direction: column;
+}
+
+.labeltitle {
+    padding: 0;
+    margin: 20px auto 20px 0px;
+}
+
+.maininfocontent {
+    display: flex;
+    flex-direction: row;
+    margin-top: 55px;
+}
+
+.avatar_username {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+
+.avatarbox {
+    width: 80px;
+    height: 80px;
+    padding: 0;
+    border-radius: 100%;
+    margin: 0 auto 0 auto;
+    border: var(--border-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    overflow: hidden;
     padding: 0;
 }
 
+.username {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px auto 0px auto;
+}
+
+.generalinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 25px;
+}
+
+.iteminfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+.iteminforow {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.iteminfotitle {
+    color: #CACACA;
+    font-size: 17px;
+    padding: 0;
+    margin: 0px auto 10px 0px;
+    font-weight: 700;
+}
+
+/* 
 .form {
     display: flex;
     justify-content: center;
@@ -137,4 +224,4 @@ input:-webkit-autofill {
         justify-content: center;
         margin: auto;
     }
-}
+} */

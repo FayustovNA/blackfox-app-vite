@@ -15,7 +15,7 @@ export const Library: React.FC<LibraryProps> = ({ }) => {
     return (
         <div className={`${styles.mainbox}`}>
             <h1 className={styles.title}>
-                Библиотека
+                Полезная библиотека
             </h1>
             <div className={styles.grid}>
                 {items.map((item, index) => {

@@ -4,7 +4,7 @@
     height: 100px;
     flex-shrink: 0;
     border-radius: 20px;
-    background: #2D2C32;
+    background: var(--background-gradient);
     display: flex;
     flex-direction: row;
     padding: 0px;

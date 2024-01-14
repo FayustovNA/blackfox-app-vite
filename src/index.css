@@ -29,10 +29,19 @@
   color: #CACACA;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #1C1C21;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-text-size-adjust: 100%;
+  --main-background: rgba(31, 38, 45, 1);
+  --background-dark: #0F1316;
+  --background-light: #3E4B5A;
+  --background-gradient: linear-gradient(180deg, #3E4B5A 0%, #0F1316 100%);
+  --gold: #C8AB58;
+  --hover-blue: #0066cc;
+  --main-text-color: #CACACA;
+  --gray-text-color: #A7A7A7;
+  --border-light: 0.5px solid rgba(128, 128, 128, .7);
+  background: var(--main-background);
 }
 
 

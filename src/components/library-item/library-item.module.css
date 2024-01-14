@@ -3,7 +3,7 @@
     height: 240px;
     flex-shrink: 0;
     border-radius: 22px;
-    background: linear-gradient(180deg, #2D2C32 22.92%, #41444B 100%);
+    background: var(--background-gradient);
     display: flex;
     flex-direction: column;
 }
@@ -24,13 +24,13 @@
 }
 
 .sectiontitle {
-    border-radius: 10px;
+    border-radius: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #41434A;
+    background: #4D5E70;
     /* margin: auto auto auto 10px; */
-    padding: 0px 10px 0px 10px;
+    padding: 0px 15px 0px 15px;
     height: 20px;
     font-size: 12px;
 }
@@ -57,7 +57,7 @@
 
 .subtitle {
     text-transform: uppercase;
-    color: #978953;
+    color: var(--gold);
     font-size: 11px;
     font-style: normal;
     font-weight: 700;
@@ -94,7 +94,7 @@
 .link {
     border-radius: 10px;
     text-decoration: none;
-    background: rgba(45, 44, 50, 0.72);
+    background: #3E4B5A;
     background-blend-mode: luminosity;
     display: flex;
     width: 100%;
